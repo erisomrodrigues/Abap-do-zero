@@ -30,8 +30,8 @@ FORM f_selecionar_dados .
           vrkme,
           abgru
           FROM vbap
-          INTO TABLE @gt_item
-          WHERE vbeln = @s_doc.
+          INTO TABLE @gt_itens
+          WHERE vbeln IN @s_doc.
 
 
 ENDFORM.
